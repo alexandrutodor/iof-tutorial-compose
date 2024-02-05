@@ -1,11 +1,11 @@
 version: '3.8'
 services:
   # Update this to the name of the service you want to work with in your docker-compose.yml file
-  graphdb:
-    image: khaller/graphdb-free:10.0.0
-    container_name: graphdb-instance-name
-    ports:
-      - "7200:7200"
+  virtuoso:
+      image: openlink/virtuoso-opensource-7:latest
+      container_name: virtuoso-7-opensource
+      ports:
+      - "8890:8890"
     # If you want add a non-root user to your Dockerfile, you can use the "remoteUser"
     # property in devcontainer.json to cause VS Code its sub-processes (terminals, tasks, 
     # debugging) to execute as the user. Uncomment the next line if you want the entire 
