@@ -6,8 +6,8 @@ services:
       container_name: virtuoso-7-opensource
       ports:
       - "8890:8890"
-  environment:
-      DBA_PASSWORD: iof-materials
+      environment:
+        DBA_PASSWORD: iof-materials
 
     # If you want add a non-root user to your Dockerfile, you can use the "remoteUser"
     # property in devcontainer.json to cause VS Code its sub-processes (terminals, tasks, 
